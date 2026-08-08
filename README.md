@@ -10,7 +10,7 @@ This project simulates a small-business IT environment: provisioning a Windows S
 
 ## Architecture
 
-Domain Controller/ AMI: Windows Server 2025 t3.small
+Domain Controller/ AMI: Windows Server 2025 t3.medium
 Domain: corplab.local
 VPC and subnet: The setup for this lab includes one VPC and inside that, one public subnet.
 Contained in the public subnet is the domain controller and a domain joined client with an ip given through DCHP.
