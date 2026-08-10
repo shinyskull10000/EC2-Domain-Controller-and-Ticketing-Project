@@ -23,4 +23,22 @@ In a legitimate production environment outside of this lab, I would not expose m
 
 ![SecurityGroupScreenShot](screenshots/securitygrouprules.png)
 
-Provisioned Windows 2022 Base t3.medium and t3.small with security groups that allow for RDP from my IP
+Provisioned Windows 2022 Base t3.medium and t3.small with security groups that allow for RDP from my IP. both instances are in seperate security groups but for this lab have the same rules. 
+
+## RDP into the EC2 instance to begin the lab
+
+![RDPwithAmazon](screenshots/RDPintoDC.png)
+
+Connecting with the EC2 instance through RDP. This represents how in some tech scenarios you may have to RDP into some machines to do changes. However RDP is not the most secure and their should be precautions made to ensure proper authentication and security.
+
+## Powershell Command Processing (full user lifecycle)
+
+#### Installing windows AD DS
+![ADDomainServicesInstall](screenshots/ADDomainServices.png)
+
+#### Promoting to a new forest with the domain name as corplab.local
+![ADDSForestInstall](screenshots/ADDSForestInstall.png)
+This step reboots the server so you will have to log back in with RDP as the administrator for the instance.
+#### Post promotion verification
+running these 3 lines of script in the AD to ensure promotion was successful
+![GET-ADDomain](screenshots/get-addomain.png)
