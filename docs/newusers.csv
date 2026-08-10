@@ -1,0 +1,4 @@
+Name,SamAccountName,OU,Password
+"John Doe",jdoe,"OU=IT,DC=corplab,DC=local",TempPass123!
+"Amy Lee",alee,"OU=HR,DC=corplab,DC=local",TempPass123!
+"Carlos Ruiz",cruiz,"OU=Sales,DC=corplab,DC=local",TempPass123!
