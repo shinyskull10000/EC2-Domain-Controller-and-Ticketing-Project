@@ -42,3 +42,49 @@ This step reboots the server so you will have to log back in with RDP as the adm
 #### Post promotion verification
 running these 3 lines of script in the AD to ensure promotion was successful
 ![GET-ADDomain](screenshots/get-addomain.png)
+![GET-ADForest](screenshots/get-adforest.png)
+![DCDIAG](screenshots/dcdiag.png)
+
+#### Taking an AMI of the instance
+Getting an image at this stage of the lab is important in case problems occur and it is required to go back to when the Domain Controller was just promoted.
+![AMIImage](screenshots/CreationOfAMIafterpromotingtoDomainController.png)
+
+#### Creating OU Structure
+Creating an OU structure for IT, Sales and HR to try and represent a more corporate environment within a lab. It is important to have different organisation untis within to be able to organise network resources like users, groups and computers.
+![CreationofOUStruture](screenshots/CreationofOUStructure.png)
+![ActiveDirectoryUsersandComputers](screenshots/activedirectoryusersandcomputers.png)
+
+#### Creating a single user
+Creating a user called JaneSmith within the Sales OU branch to showcase the ability to add a single user through active directory
+![CreatingTempuser](screenshots/creatingtempuserJaneSmithFromSales.png)
+
+#### Creating and adding user to security group
+Important to have a security group as it is an object that allows for the collection of accounts to be sorted into manageable units to assign permissions.
+![CreatingSecuritygroupandadduser](screenshots/CreatingSecuritygroupandaddingusertoit.png)
+
+#### Modify a user
+![ModifyAUser](screenshots/modifyuserattributes.png)
+Important to be able to modify users to show appropriate information, could be related to tickets which can be tracked or gives info on the account itself.
+
+#### Reset a Password/ unlock an account
+
+#### Disable/ re-enable an account
+![DisableandReenableofACC](screenshots/disablingandre-enablingofanaccount.png)
+In cases where the account shouldnt be deleted but disabled.
+
+#### move a user between OUs
+
+#### Delete a user
+![DeletionofaUser](screenshots/deletionofauser.png)
+When an account needs to be deleted.
+
+#### Bulk create users from a csv
+![bulkcreationofnewusersviaCSV](screenshots/bulkcreationthroughnewusersCSV.png)
+In cases where multiple users need to be added at once, it is possible to use a csv and a powershell script (as seen in scripts/bulkcsvaddition.ps1)
+
+#### Audit after adding accounts
+![listofusersafterbulkadd](screenshots/listofusersafterbulkadd.png)
+
+Using the commands in powershell in scripts/audittoreports.ps1 to be able to show the users added.
+
+
