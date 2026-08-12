@@ -67,12 +67,18 @@ Important to have a security group as it is an object that allows for the collec
 Important to be able to modify users to show appropriate information, could be related to tickets which can be tracked or gives info on the account itself.
 
 #### Reset a Password/ unlock an account
+![ResetPassword](screenshots/PasswordReset.png)
+Showcasing the ability to reset a password.
+![UnlockAccount](screenshots/UnlockAccount.png)
+Unlocking an account incase a user becomes locked out for getting the password wrong too many times.
 
 #### Disable/ re-enable an account
 ![DisableandReenableofACC](screenshots/disablingandre-enablingofanaccount.png)
 In cases where the account shouldnt be deleted but disabled.
 
 #### move a user between OUs
+Moving a user between OUs e.g. if they are moved to a different apartment or team
+![MovingUserBetweenOUs](screenshots/MovingUserbetweenOUs.png)
 
 #### Delete a user
 ![DeletionofaUser](screenshots/deletionofauser.png)
