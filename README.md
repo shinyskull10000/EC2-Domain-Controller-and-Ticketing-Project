@@ -93,4 +93,5 @@ In cases where multiple users need to be added at once, it is possible to use a 
 
 Using the commands in powershell in scripts/audittoreports.ps1 to be able to show the users added.
 
+#### Porting Domaain Joined client into the domain controller and signing in
 
