@@ -95,3 +95,15 @@ Using the commands in powershell in scripts/audittoreports.ps1 to be able to sho
 
 #### Porting Domaain Joined client into the domain controller and signing in
 
+
+## ZenDesk Ticketing
+
+
+Ticket	Task	                        Screenshot
+#1	    Provision domain controller	    ![ticket1](tickets/ticket-01-dc-provisioning.png)
+#2	    Build OU structure	            ![ticket2](tickets/ticket-02-ou-structure.png)
+#3	    New hire Sales	                ![ticket3](tickets/ticket-03-new-hire-sales.png)
+#4	    Bulk onboarding	                ![ticket4](tickets/ticket-04-bulk-onboarding.png)
+#5	    Temporary account disable	    ![ticket5](tickets/ticket-05-disable-account.png)
+#6	    Domain-join CLIENT01	        ![ticket6](tickets/ticket-06-domain-join.png)
+#7	    Offboarding account deletion	![ticket7](tickets/ticket-07-offboarding.png)
