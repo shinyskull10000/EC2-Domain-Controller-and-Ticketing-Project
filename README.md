@@ -2,8 +2,6 @@
 
 Standing up a Windows domain controller on AWS EC2, managing users/groups via PowerShell, and running the work through a ticketing workflow (Zendesk) to simulate a real IT operations process.
 
-## Table of Contents
-
 
 ## Project Goal
 This project simulates a small-business IT environment: provisioning a Windows Server domain controller in AWS, managing the user lifecycle via PowerShell, and processing each change through a ticketing system, to demonstrate proven experience with level 1 sysadmin/help-desk workflows end to end.
@@ -98,7 +96,11 @@ Using the commands in powershell in scripts/audittoreports.ps1 to be able to sho
 
 ## ZenDesk Ticketing
 
+This aims to build and demonstrate skills related to it support and or helpdesk roles using ZenDesk as a ticketing medium to showcase the applied skills learned throughout this lab/project.
 
+Something to note with the zendesk tickets is that without creating fake emails to log into for each requester all the information suhc as the description come from me. However I still attempt to make the flow of tickets as accurate as possible to a real enivronment through having a description with internal notes on how the job was completed, with it being solved and closed with a public reply to the requester. 
+
+#### Ticket Mapping Table
 Ticket	Task	                        Screenshot
 #1	    Provision domain controller	    ![ticket1](tickets/ticket-01-dc-provisioning.png)
 #2	    Build OU structure	            ![ticket2](tickets/ticket-02-ou-structure.png)
