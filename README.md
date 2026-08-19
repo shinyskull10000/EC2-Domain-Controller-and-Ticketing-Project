@@ -14,6 +14,10 @@ VPC and subnet: The setup for this lab includes one VPC and inside that, one pub
 Contained in the public subnet is the domain controller and a domain joined client with an ip given through DCHP.
 The internet gateway also only lets in RDP from my own IP address for both EC instances.
 
+### Diagram
+![LabDiagram](screenshots/Architectureoflab.png)
+This diagram outlines of the lab as well as showing what connections are allowed between each EC2 isntance.
+
 #### Something to note
 In a legitimate production environment outside of this lab, I would not expose my 3389 port directly for RDP and instead using something like a bastion host.
 
@@ -91,7 +95,7 @@ In cases where multiple users need to be added at once, it is possible to use a 
 
 Using the commands in powershell in scripts/audittoreports.ps1 to be able to show the users added.
 
-#### Porting Domaain Joined client into the domain controller and signing in
+#### Porting Domain Joined client into the domain controller and signing in
 
 
 ## ZenDesk Ticketing
