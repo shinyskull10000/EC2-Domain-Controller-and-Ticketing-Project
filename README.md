@@ -27,6 +27,10 @@ In a legitimate production environment outside of this lab, I would not expose m
 
 Provisioned Windows 2022 Base t3.medium and t3.small with security groups that allow for RDP from my IP. both instances are in seperate security groups but for this lab have the same rules. 
 
+![SecurityGroupInboundRulesDC](screenshots/DCSecuritygroupinboundrules.png)
+
+In order for the client EC2 instance to connect into the domain controller, the inbound rules for the domain controller need to be updated so that when the domain-joined client wants to connect and log in to an account on the DC. It is possible for this to happen outside of using my personal IP. The security group of the client is set as the source so that each individual IP doesn't have to be added if there were more than 1 client.
+
 ## RDP into the EC2 instance to begin the lab
 
 ![RDPwithAmazon](screenshots/RDPintoDC.png)
@@ -96,6 +100,7 @@ In cases where multiple users need to be added at once, it is possible to use a 
 Using the commands in powershell in scripts/audittoreports.ps1 to be able to show the users added.
 
 #### Porting Domain Joined client into the domain controller and signing in
+
 
 
 ## ZenDesk Ticketing
