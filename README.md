@@ -99,9 +99,24 @@ In cases where multiple users need to be added at once, it is possible to use a 
 
 Using the commands in powershell in scripts/audittoreports.ps1 to be able to show the users added.
 
-#### Porting Domain Joined client into the domain controller and signing in
+### Porting Domain Joined client into the domain controller and signing in
+
+#### Setting Preferred DNS Server
+![settingpreferredDNSServer](screenshots/ClientSettingPerferredDNS%20server.png)
+
+#### Add-Computer 
+Ran in the client powershell terminal: Add-Computer -DomainName "corplab.local" -Credential (Get-Credential) -Restart
+This adds the computer to the Domain Controller and will ask you to log in throught the Get-Credential call. You will have to log in as the administrator account of the client PC.
 
 
+#### Issues Encountered
+There were RDP forced password change issues when trying to RDP into the jdoe account meaning a newpassword had to be set. This wouldn't occur if it wasn't done via rdp as you would just be prompted to change the password after using the temp password. It was also required for a net localgroup to be made on the client ec2 instance for the CORPLAB\jdoe account as it would also not let me RDP into that account if i did not add the account to the localgroup.
+
+![Adding to local group](screenshots/runningcommandsonclientadminacc.png)
+
+#### RDP and log in to an account
+
+![LoggingInAsJDoe]
 
 ## ZenDesk Ticketing
 
