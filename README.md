@@ -116,7 +116,9 @@ There were RDP forced password change issues when trying to RDP into the jdoe ac
 
 #### RDP and log in to an account
 
-![LoggingInAsJDoe]
+![LoggingInAsJDoe](screenshots/SigninginasJdoe.png)
+
+Done through RDP into the EC2 client instance. selecting different user and logging in through the username CORPLAB\jdoe.
 
 ## ZenDesk Ticketing
 
